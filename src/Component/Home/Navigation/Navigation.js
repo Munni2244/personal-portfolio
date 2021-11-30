@@ -14,7 +14,7 @@ const Navigation = () => {
 
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-        <Link className="navbar-brand  fw-bold fs-lg" href="#"> <span style={{color:'#ff3399'}}>MuNni</span> </Link>
+        <Link to="/" className="navbar-brand  fw-bold fs-lg" href="#"> <span style={{color:'#ff3399'}}>MuNni</span> </Link>
         </li>
         
       </ul>
@@ -22,6 +22,12 @@ const Navigation = () => {
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
           <Link to="/home" className="nav-link active" aria-current="page" >Home</Link>
+        </li>
+        <li className="nav-item">
+          <Link to="/contact" className="nav-link active" aria-current="page" >Contact</Link>
+        </li>
+        <li className="nav-item">
+          <Link to="/about" className="nav-link active" aria-current="page" >About</Link>
         </li>
         
       </ul>
