@@ -6,27 +6,22 @@ import user from '../../../images/user.jpg'
 
 const ContactMe = () => {
 
-    const SendEmail=(e)=>{
-        e.preventDefault();
-
-        emailjs.sendForm('service_coqvc8i', 'template_m2o7dah', e.target, 'YOUR_USER_ID')
-          .then((result) => {
-              console.log(result.text);
-          }, (error) => {
-              console.log(error.text);
-          });
-
-    }
 
     return (
        <div style={{marginTop:'100px'}}>
             <div className="contact row  mt-5">
-            <div className=" col-12 col-lg-6 col-md-6 mt-5" >
+            <div className=" col-12 col-lg-6 col-md-6 " >
                 <div className=" text-center m-5">
                     <h1 style={{color:'#ff3399'}} className="">Contact With Me</h1>
-                   <form onSubmit={SendEmail} action="">
-                   <input placeholder="Your Email" className="my-4 bg-dark border-light rounded-pill" style={{padding:'5px', width:'90%',}} type="email" name="" id="" /> <br />
-                   <textarea  className="my-3 bg-dark border-light rounded-pill " placeholder="text here" style={{ width:'92%',}} name="" id="" cols="50" rows="5"></textarea> <br />
+
+                   <form action="https://formsubmit.co/munnikhatun51544@gmail.com" method="POST">
+
+                   <input placeholder="Enter Your Name" className="my-4 bg-dark border-light rounded-pill" style={{padding:'5px', width:'90%',}} type="text" name="name" id=""  required/> <br />
+
+                   <input placeholder="Enter Your Email" className="my-4 bg-dark border-light rounded-pill" style={{padding:'5px', width:'90%',}} type="email" name="email" id=""  required/> <br />
+
+                   <textarea  className="my-3 bg-dark text-light border-light rounded-pill " placeholder="........Enter Your Message" style={{ width:'92%',}} name="message" id="" cols="50" rows="5" required></textarea> <br />
+                   
                    <button style={{ color:'#ff3399', width:'50%', border:'1px solid white'}} className="btn rounded-pill " type="submit"> Submit</button>
                    </form>
                 </div>

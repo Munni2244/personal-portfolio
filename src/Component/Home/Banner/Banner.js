@@ -27,8 +27,8 @@ const Banner = () => {
                    <p>Knack Of Building Applications With Fornt End And BaCkEnd  Operations </p>
                    <button  style={{ color:'white',border:'1px solid white'}} className="btn  rounded-pill" >{" "} Hire Me {" "}</button>
                 </div>
-                <div className="col-12 col-lg-6 col-md-6 mt-4">
-                    <img style={{ borderRadius: '100%', border: '8px solid #99004d' }} src={img1} alt="Girl in a hejab" width="500" height="450"></img>
+                <div className="col-12 col-lg-6 col-md-6 mt-4 img-fluid">
+                    <img style={{ borderRadius: '100%', border: '8px solid #99004d' }} src={img1} alt="Girl in a hejab" width="430" height="450"></img>
                 </div>
             </div>
         </div>

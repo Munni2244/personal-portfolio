@@ -23,7 +23,7 @@ const AboutMe = () => {
                         <p>And Also Learned some Javascript library. I have to done Many Project Successfully.</p>
                         </div>
                         <h1>Skill</h1>
-                        __________________________________________________________________________________
+                        ______________________________________________________
                     <h3>HTML</h3>
                         <div className="progress">
                             <div className="progress-bar" role="progressbar" style={{width: '90%', backgroundColor:'#ff3399'}} aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>

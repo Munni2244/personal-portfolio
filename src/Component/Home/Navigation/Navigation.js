@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Navigation = () => {
     return (
-        <div className="" >
+        <div className="container" >
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
   <div className="container-fluid">
     
@@ -14,7 +14,7 @@ const Navigation = () => {
 
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-        <Link className="navbar-brand " href="#"> <span style={{color:'#ff3399'}}>MUNni</span> </Link>
+        <Link className="navbar-brand  fw-bold fs-lg" href="#"> <span style={{color:'#ff3399'}}>MuNni</span> </Link>
         </li>
         
       </ul>
