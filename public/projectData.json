@@ -56,10 +56,10 @@
     {
       "name": "E-Learning",
       "des": "This application for teaching Programming language. This application for All students. Showing the so Many programming languages and supported mentor.",
-      "img1": "https://i.postimg.cc/gj0Y3dMj/el.png",
+      "img1": "https://i.postimg.cc/WzbV1ywV/el.png",
       "img2": "https://i.postimg.cc/bwSw-6yq2/el4.png",
-      "img3": "https://i.postimg.cc/hPjjd8ws/el2.png",
-      "img4": "https://i.postimg.cc/5NRtqYWV/el3.png",
+      "img3": "https://i.postimg.cc/zGDxPrX8/el2.png",
+      "img4": "https://i.postimg.cc/MpsdCFvR/el3.png",
       "codeClient":"https://github.com/ProgrammingHeroWC4/review-website-Munni2244",
       "link": "https://e-learning-22.netlify.app",
       "tools": "React js React Bootstrap",
