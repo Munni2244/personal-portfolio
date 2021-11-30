@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import './Projects.css'
+import './Projects.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const Projects = () => {
@@ -10,6 +12,7 @@ const Projects = () => {
         fetch('./projectData.json')
         .then(res=>res.json())
         .then(data=> setProjects(data))
+        AOS.init();
     },[])
     return (
         <div style={{marginTop:'100px'}} className="container">
@@ -17,7 +20,7 @@ const Projects = () => {
             <div className="row">
                 {
                     projects?.map(project=> (
-                        <div className="col-12 col-md-6 col-lg-6  ">
+                        <div data-aos="flip-up" className="col-12 col-md-6 col-lg-6  ">
 
                         <div className="survice">
                             <img width="400px" height="400px" src={project?.img1} alt="" />

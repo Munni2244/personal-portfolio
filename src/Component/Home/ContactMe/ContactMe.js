@@ -1,6 +1,5 @@
 import React from 'react';
 import './ContactMe.css'
-import emailjs from 'emailjs-com';
 
 import user from '../../../images/user.jpg'
 
@@ -12,7 +11,7 @@ const ContactMe = () => {
             <div className="contact row  mt-5">
             <div className=" col-12 col-lg-6 col-md-6 " >
                 <div className=" text-center m-5">
-                    <h1 style={{color:'#ff3399'}} className="">Contact With Me</h1>
+                    <h1 style={{color:'#ff3399'}} className="">Contact With Me <i class="fas fa-phone-square"></i></h1>
 
                    <form action="https://formsubmit.co/munnikhatun51544@gmail.com" method="POST">
 

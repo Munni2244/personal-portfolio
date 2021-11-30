@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
-import { Link } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const ProjectDetails = () => {
     const { id } = useParams();
@@ -10,6 +11,7 @@ const ProjectDetails = () => {
         fetch("/projectData.json")
             .then(res => res.json())
             .then(data => setDetails(data))
+            AOS.init();
     }, [])
     console.log(details);
     let project = details.find((detail) => detail.id == id);
@@ -17,11 +19,11 @@ const ProjectDetails = () => {
 
     return (
         <div style={{marginTop:'70px'}} className="text-light container">
-             <a target="_blank" href={project?.link}>
+             <a data-aos="zoom-in-right" target="_blank" href={project?.link} rel="noreferrer">
         <button style={{ color:'white', border:'1px solid white'}} className="btn rounded-pill" type=""><i class="fas fa-link"></i> Live site Link</button></a>
-             <a target="_blank" href={project?.codeClient}>
-        <button style={{ color:'white', border:'1px solid white'}} className="btn rounded-pill mx-3" type=""><i class="fas fa-link"></i> Client Code</button></a>
-          { project?.codeSurver &&  <a target="_blank" href={project?.codeSurver}>
+             <a data-aos="zoom-in-right" target="_blank" href={project?.codeClient} rel="noreferrer">
+        <button style={{ color:'white', border:'1px solid white'}} className="btn rounded-pill mx-3" type="" ><i class="fas fa-link"></i> Client Code</button></a>
+          { project?.codeSurver &&  <a data-aos="zoom-in-right" target="_blank" href={project?.codeSurver} rel="noreferrer">
         <button style={{ color:'white', border:'1px solid white'}} className="btn rounded-pill" type=""><i class="fas fa-link"></i> Client Code</button></a>}
 
 
@@ -29,9 +31,9 @@ const ProjectDetails = () => {
                 <div style={{ width: '70%', height: '500px' }} className="col-12 col-lg-9 col-md-12">
                     <div id="carouselExampleCaptions" className="carousel slide " data-bs-ride="carousel">
                         <div className="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active bg-dark" aria-current="true" aria-label="Slide 1"></button>
+                            <button className="bg-dark" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button className="bg-dark" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                         </div>
                         <div className="carousel-inner">
                             <div className="carousel-item active d-flex justify-content-center align-items-center ">
@@ -70,7 +72,7 @@ const ProjectDetails = () => {
                     </div>
                 </div>
                 {/* technology use */}
-                <div style={{marginTop:'-300px'}} className="col-12 col-lg-3 col-md-3">
+                <div data-aos="zoom-in-left" style={{marginBottom:'200px'}} className="col-12 col-lg-3 col-md-3">
                     <h3 > Technology Uses</h3>
                     <div>
                     <button style={{ color:'#ff3399', border:'1px solid white'}} className="btn rounded-pill m-2" type="">{project?.tool1}</button>

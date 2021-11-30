@@ -5,6 +5,9 @@ import ContactMe from './Component/Home/ContactMe/ContactMe';
 import AboutMe from './Component/Home/AboutMe/AboutMe';
 import Navigation from './Component/Home/Navigation/Navigation';
 import ProjectDetails from './Component/ProjectDetails/ProjectDetails';
+import Blog from './Component/Blog/Blog';
+import NotFound from './Component/NotFound/NotFound';
+import Footer from './Component/Home/Footer/Footer';
 
 function App() {
   return (
@@ -29,11 +32,20 @@ function App() {
           <AboutMe></AboutMe>
           </Route>
 
+          <Route  path="/blog">
+         <Blog></Blog>
+          </Route>
+
           <Route  path="/project/:id">
          <ProjectDetails></ProjectDetails>
           </Route>
+          
+          <Route  path="/*">
+         <NotFound></NotFound>
+          </Route>
 
         </Switch>
+        <Footer></Footer>
       </BrowserRouter>
     </div>
   );
