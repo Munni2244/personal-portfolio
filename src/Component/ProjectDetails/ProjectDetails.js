@@ -24,7 +24,7 @@ const ProjectDetails = () => {
              <a data-aos="zoom-in-right" target="_blank" href={project?.codeClient} rel="noreferrer">
         <button style={{ color:'white', border:'1px solid white'}} className="btn rounded-pill mx-3" type="" ><i class="fas fa-link"></i> Client Code</button></a>
           { project?.codeSurver &&  <a data-aos="zoom-in-right" target="_blank" href={project?.codeSurver} rel="noreferrer">
-        <button style={{ color:'white', border:'1px solid white'}} className="btn rounded-pill" type=""><i class="fas fa-link"></i> Client Code</button></a>}
+        <button style={{ color:'white', border:'1px solid white'}} className="btn rounded-pill" type=""><i class="fas fa-link"></i> Surver Code</button></a>}
 
 
             <div className="row mt-5 d-flex justify-content-center align-items-center">

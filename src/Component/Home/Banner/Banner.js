@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import img1 from '../../../images/mm1.jpg'
+import img1 from '../../../images/hh7.jpg'
 import Typical from 'react-typical';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
