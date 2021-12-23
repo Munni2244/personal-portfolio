@@ -8,7 +8,8 @@ const AboutMe = () => {
         AOS.init();
     }, [])
     return (
-        <div style={{ marginTop: '100px' }} className="container mb-5 text-light shadow p-3">
+       <div className=''>
+            <div style={{ marginTop: '100px' }} className="container mb-5  text-light shadow p-3">
             <h1 style={{ color: '#ff3399', marginBottom: '60px', }} className="text-center  shadow">ABOUT ME_______________</h1>
 
             <div className="row">
@@ -28,7 +29,7 @@ const AboutMe = () => {
                             <p>And Also Learned some Javascript library. I have to done Many Project Successfully.</p>
                         </div>
                         <h1>Skill</h1>
-                        ______________________________________________________
+                        _________________________________________________
                         <h3>HTML</h3>
                         <div className="progress">
                             <div className="progress-bar" role="progressbar" style={{ width: '95%', backgroundColor: '#ff3399' }} aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
@@ -47,7 +48,9 @@ const AboutMe = () => {
                 </div>
             </div>
         </div>
+       </div>
     );
 };
 
 export default AboutMe;
+

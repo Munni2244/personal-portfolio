@@ -1,0 +1,29 @@
+.blog a{
+    text-decoration: none;
+    color: rgb(245, 197, 213);
+    font-size: larger;
+    font-weight: 600;
+    margin: 20px;
+    border-bottom: 3px solid rgb(184, 26, 52);
+
+}
+.blog a:hover{
+    border-bottom: 3px solid rgb(247, 221, 225);
+    border-top: 3px solid rgb(163, 22, 43);
+
+
+}
+.string{
+    border-right: 1px solid gainsboro ;
+    height: 600px;
+}
+.string a{
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    font-weight: 600;
+    margin-top: 20px;
+    display: block;
+    margin-left: 10px;
+
+}
